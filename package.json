@@ -1,0 +1,52 @@
+{
+  "name": "react-tailwind-webpack5-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alonronin/react-tailwind-webpack5-boilerplate.git",
+  "author": "alonronin <alon@ronin.co.il>",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve dist -s",
+    "build-css": "tailwindcss build node_modules/tailwindcss/tailwind.css -o src/style.css",
+    "watch-css": "chokidar 'tailwind.config.js' --initial=true -c 'yarn build-css'",
+    "predev": "yarn build-css",
+    "dev": "webpack serve --mode development --config webpack.config.development.js --inline --hot --history-api-fallback --progress",
+    "prebuild": "NODE_ENV=production yarn build-css",
+    "build": "webpack --mode production --config webpack.config.production.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.1",
+    "@svgr/webpack": "^5.4.0",
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "chokidar-cli": "^2.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "cssnano": "^4.1.10",
+    "dotenv-webpack": "^6.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.0.4",
+    "prettier": "^2.1.2",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "serve": "^11.3.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
