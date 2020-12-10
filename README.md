@@ -5,6 +5,13 @@ React + Tailwind CSS + Webpack 5 Boilerplate
 
 A bare minimum, and as much as un-opinionated as can be, boilerplate so you can start develope and deploy React apps with Tailwind CSS and Webpack 5.
 
+### Features
+
+- [x] Routing and Lazy Loading routes
+- [x] New React 17 JSX Transform
+- [x] Importing `svg` as React Components  
+- [ ] Fast Refresh
+
 ### Install
 
 ```$shell
