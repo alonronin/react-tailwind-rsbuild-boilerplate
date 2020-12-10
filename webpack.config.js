@@ -15,7 +15,14 @@ module.exports = {
         loader: 'babel-loader',
         include: context,
         options: {
-          presets: ['@babel/preset-react'],
+          presets: [
+            [
+              '@babel/preset-react',
+              {
+                runtime: 'automatic',
+              },
+            ],
+          ],
         },
       },
 
@@ -35,7 +42,7 @@ module.exports = {
 
   plugins: [
     new HtmlPlugin({
-      title: 'Label Printer',
+      title: 'React, Tailwind and Webpack 5 Boilerplate',
       favicon: './src/favicon.svg',
     }),
   ],

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { cn } from '@/utils.js';
 import SpinningIcon from '@/assets/oval.svg';
 
