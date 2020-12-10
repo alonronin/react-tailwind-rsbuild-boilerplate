@@ -48,7 +48,7 @@ module.exports = merge(config, {
         test: /\.(woff2?|ttf|eot)(\?-.*)?$/,
         loader: 'file-loader',
         options: {
-          name: 'assets/fonts/[hash].[ext]',
+          name: 'assets/fonts/[contenthash].[ext]',
           esModule: false,
         },
       },
@@ -57,7 +57,7 @@ module.exports = merge(config, {
         test: /\.(png|jpe?g|ico|gif)(\?-.*)?$/,
         loader: 'file-loader',
         options: {
-          name: 'assets/img/[hash].[ext]',
+          name: 'assets/img/[contenthash].[ext]',
           esModule: false,
         },
       },
