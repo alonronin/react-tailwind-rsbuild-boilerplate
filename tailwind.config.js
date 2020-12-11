@@ -10,19 +10,34 @@ module.exports = {
       },
 
       typography: (theme) => ({
-        DEFAULT: {
+        gray: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.800'),
             h2: {
-              color: theme('colors.gray.500')
-            }
+              color: theme('colors.gray.600'),
+            },
+            a: {
+              color: theme('colors.gray.600'),
+              fontWeight: 'bold',
+            },
           },
         },
       }),
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['group-focus', 'active'],
+      borderColor: ['group-focus'],
+      boxShadow: ['group-focus'],
+      opacity: ['group-focus'],
+      textColor: ['group-focus', 'active'],
+      textDecoration: ['group-focus'],
+    },
   },
-  plugins: [require('@tailwindcss/typography')],
-}
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+};

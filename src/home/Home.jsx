@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { getPosts } from './service.js';
 
 const Post = ({ title, body }, key) => (
-  <li className="prose lg:prose-xl" key={key}>
+  <li className="prose prose-gray lg:prose-xl" key={key}>
     <h2>{title}</h2>
     <p>{body}</p>
   </li>

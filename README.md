@@ -11,6 +11,7 @@ A bare minimum, and as much as un-opinionated as can be, boilerplate so you can 
 - [x] New React 17 JSX Transform
 - [x] Importing `svg` as React Components  
 - [ ] Fast Refresh
+- [x] Tailwind CSS Forms, Typography and Aspect Ratio plugins
 - [ ] Create new project with `npx create-rtw` or `yarn create rtw`
 
 ### Install
