@@ -43,7 +43,7 @@ module.exports = {
   plugins: [
     new HtmlPlugin({
       title: 'React, Tailwind and Webpack 5 Boilerplate',
-      favicon: './src/favicon.svg',
+      favicon: './src/assets/favicon.svg',
     }),
   ],
 };

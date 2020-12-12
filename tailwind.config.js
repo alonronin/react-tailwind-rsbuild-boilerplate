@@ -8,21 +8,6 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
-
-      typography: (theme) => ({
-        gray: {
-          css: {
-            color: theme('colors.gray.800'),
-            h2: {
-              color: theme('colors.gray.600'),
-            },
-            a: {
-              color: theme('colors.gray.600'),
-              fontWeight: 'bold',
-            },
-          },
-        },
-      }),
     },
   },
   variants: {
