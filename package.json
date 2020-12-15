@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/alonronin/react-tailwind-webpack5-boilerplate.git",
   "author": "alonronin <alon@ronin.co.il>",
-  "license": "MIT",
+  "license": "Unlicense",
   "scripts": {
     "start": "serve dist -s",
     "build-css": "tailwindcss build node_modules/tailwindcss/tailwind.css -o src/style.css",
