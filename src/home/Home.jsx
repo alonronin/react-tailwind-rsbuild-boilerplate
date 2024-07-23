@@ -22,14 +22,6 @@ const Home = () => {
           <a href="https://reactjs.com" target="_blank">
             React
           </a>
-
-          <ul>
-            <li>
-              <a href="https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#whats-a-jsx-transform">
-                React 17 JSX Transform
-              </a>
-            </li>
-          </ul>
         </li>
 
         <li>
@@ -49,12 +41,6 @@ const Home = () => {
                 @tailwindcss/forms
               </a>
             </li>
-
-            <li>
-              <a href="https://github.com/tailwindlabs/tailwindcss-aspect-ratio">
-                @tailwindcss/aspect-ratio
-              </a>
-            </li>
           </ul>
         </li>
 
@@ -63,7 +49,7 @@ const Home = () => {
         </li>
 
         <li>
-          <a href="https://webpack.js.org/">Webpack</a>
+          <a href="https://rsbuild.dev/">RSBuild</a>
         </li>
       </ul>
     </div>

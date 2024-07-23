@@ -1,28 +1,8 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/**.{js,jsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-    },
+    extend: {},
   },
-  variants: {
-    extend: {
-      backgroundColor: ['group-focus', 'active'],
-      borderColor: ['group-focus'],
-      boxShadow: ['group-focus'],
-      opacity: ['group-focus'],
-      textColor: ['group-focus', 'active'],
-      textDecoration: ['group-focus'],
-    },
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };

@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Loading from '@/components/Loading.jsx';
 import routes from '@/routes.jsx';
@@ -9,11 +9,11 @@ const App = () => (
   <Router>
     <Layout>
       <Suspense fallback={<Loading />}>
-        <Switch>
-          {routes.map((props, index) => (
-            <Route key={index} {...props} />
-          ))}
-        </Switch>
+        <Routes>
+          {routes.map(({ Component, ...props }, index) => {
+            return <Route key={index} element={<Component />} {...props} />;
+          })}
+        </Routes>
       </Suspense>
     </Layout>
   </Router>
