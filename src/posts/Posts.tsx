@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import { getPosts } from './service.js';
+import { getPosts } from './service.ts';
 
-const Post = ({ title, body }, key) => (
+const Post = (
+  { title, body }: { title: string; body: string },
+  key: number,
+) => (
   <div className="prose lg:prose-xl" key={key}>
     <h2>{title}</h2>
     <p>{body}</p>
