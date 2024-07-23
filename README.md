@@ -6,6 +6,7 @@ A bare minimum, and as much as un-opinionated as can be, boilerplate, so you can
 
 ### Features
 
+- [x] Blazingly Fast!
 - [x] Routing and Lazy Loading routes
 - [x] React Suspense
 - [x] React 18
@@ -34,7 +35,6 @@ Default port is 3000 (or first available port). You can pass `--port`.
 ### Build
 
 ```$shell
-$ export BASE_URL=https://jsonplaceholder.typicode.com
 $ yarn build
 ```
 
