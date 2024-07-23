@@ -1,18 +1,17 @@
-React + Tailwind CSS + Webpack 5 Boilerplate
-===
+# React + Tailwind CSS + RSBuild Boilerplate
 
-> React + React Router + Tailwind Css with Webpack 5 boilerplate.
+> React + React Router + Tailwind Css with RSBuild boilerplate.
 
-A bare minimum, and as much as un-opinionated as can be, boilerplate so you can start develope and deploy React apps with Tailwind CSS and Webpack 5.
+A bare minimum, and as much as un-opinionated as can be, boilerplate, so you can start develop and deploy React apps with Tailwind CSS and RSBuild.
 
 ### Features
 
 - [x] Routing and Lazy Loading routes
 - [x] React Suspense
-- [x] New React 17 JSX Transform
-- [x] Importing `svg` as React Components  
-- [ ] Fast Refresh
-- [x] Tailwind CSS Forms, Typography and Aspect Ratio plugins
+- [x] React 18
+- [x] Importing `svg` as React Components
+- [x] Fast Refresh
+- [x] Tailwind CSS Forms and Typography
 - [x] Create new project with `npx create-rtw-app` or `yarn create rtw-app`
 
 ### Install
@@ -23,15 +22,13 @@ $ git clone && yarn
 
 ### Development
 
-Copy `.env.example` to `.env`
+Copy `.env.example` to `.env` or `.env.local`
 
 ```$shell
 $ yarn dev
 ```
 
-Default port is 8080 (or first available port). You can pass `--port`.
-
-If you want to watch changes to `tailwind.config.js` run `yarn watch-css` in a different process.
+Default port is 3000 (or first available port). You can pass `--port`.
 
 ### Build
 
@@ -40,12 +37,8 @@ $ export BASE_URL=https://jsonplaceholder.typicode.com
 $ yarn build
 ```
 
-### Serve dist
+### Links
 
-```$shell
-$ yarn start
-```
-
-Default port is 5000 (or first available port). You can pass `-l`.
-
-
+- React - https://react.dev/
+- TailwindCss - https://tailwindcss.com/
+- RSBuild - https://rsbuild.dev/
