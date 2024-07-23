@@ -12,6 +12,7 @@ A bare minimum, and as much as un-opinionated as can be, boilerplate, so you can
 - [x] Importing `svg` as React Components
 - [x] Fast Refresh
 - [x] Tailwind CSS Forms and Typography
+- [x] TypeScript
 - [x] Create new project with `npx create-rtw-app` or `yarn create rtw-app`
 
 ### Install
