@@ -6,7 +6,7 @@
   "author": "alonronin <alon@ronin.co.il>",
   "license": "Unlicense",
   "scripts": {
-    "start": "serve dist -s",
+    "serve-static": "rsbuild build && npx serve dist -s",
     "dev": "rsbuild dev",
     "build": "rsbuild build"
   },
