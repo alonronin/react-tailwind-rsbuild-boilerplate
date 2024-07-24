@@ -6,9 +6,9 @@ const Home = () => {
       <h1>React, Tailwind and RSBuild Boilerplate</h1>
 
       <p>
-        A bare minimum, and as much as un-opinionated as can be, boilerplate so
-        you can start develop and deploy React apps with Tailwind CSS and
-        RSBuild.
+        A blazingly fast, bare minimum, and as much as un-opinionated as can be,
+        boilerplate so you can start develop and deploy React apps with Tailwind
+        CSS and RSBuild.
       </p>
 
       <p>
