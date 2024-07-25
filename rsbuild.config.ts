@@ -5,7 +5,7 @@ import { pluginSvgr } from '@rsbuild/plugin-svgr';
 export default defineConfig({
   plugins: [pluginReact(), pluginSvgr()],
   html: {
-    favicon: './src/assets/rocket.svg',
+    favicon: './favicon.png',
     title: 'React, Tailwind and RSBuild Boilerplate',
   },
 });

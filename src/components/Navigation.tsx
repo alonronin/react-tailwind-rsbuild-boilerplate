@@ -11,8 +11,8 @@ export function Navigation() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className="bg-gray-800 sticky top-0">
+      <div className="container mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
@@ -30,7 +30,7 @@ export function Navigation() {
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-gray-300">
+            <div className="border-2 border-black flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-gray-300">
               <LogoIcon className="size-6" />
             </div>
             <div className="hidden sm:block sm:ml-6">
