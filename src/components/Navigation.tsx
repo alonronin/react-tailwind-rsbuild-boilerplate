@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 import { cn } from '@/utils';
-import LogoIcon from '@/assets/favicon.svg?react';
+import LogoIcon from '@/assets/rocket.svg?react';
 import routes from '@/routes';
 import MenuItem from '@/components/MenuItem';
-import HamburgerIcon from '@/assets/hero-icon-menu.svg?react';
-import CLoseIcon from '@/assets/hero-icon-x.svg?react';
+import HamburgerIcon from '@/assets/menu.svg?react';
+import CLoseIcon from '@/assets/close.svg?react';
 
 export function Navigation() {
   const [toggle, setToggle] = useState(false);
@@ -30,8 +30,8 @@ export function Navigation() {
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center">
-              <LogoIcon className="h-8 w-auto" />
+            <div className="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-gray-300">
+              <LogoIcon className="size-6" />
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">

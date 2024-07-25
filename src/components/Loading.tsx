@@ -3,10 +3,9 @@ import SpinningIcon from '@/assets/oval.svg?react';
 import { ComponentProps } from 'react';
 
 const Loading = ({ className, ...props }: ComponentProps<'div'>) => (
-  <div className="min-h-screen flex items-center justify-center">
+  <div className="min-h-screen flex items-center justify-center" {...props}>
     <SpinningIcon
-      {...props}
-      className={cn('w-16 h-16 text-gray-600', className)}
+      className={cn('w-16 h-16 text-gray-600 animate-spin', className)}
     />
   </div>
 );
