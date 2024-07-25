@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+export default function Home() {
   return (
     <div className="prose prose-blue lg:prose-xl">
       <h1>React, Tailwind and RSBuild Boilerplate</h1>
@@ -54,6 +54,4 @@ const Home = () => {
       </ul>
     </div>
   );
-};
-
-export default Home;
+}
